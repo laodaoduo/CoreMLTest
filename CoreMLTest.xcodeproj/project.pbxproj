@@ -12,6 +12,8 @@
 		FBAD413A1EEC14920066DD90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAD41381EEC14920066DD90 /* Main.storyboard */; };
 		FBAD413C1EEC14920066DD90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAD413B1EEC14920066DD90 /* Assets.xcassets */; };
 		FBAD413F1EEC14920066DD90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAD413D1EEC14920066DD90 /* LaunchScreen.storyboard */; };
+		FBD4D2A71EEC2151000F1BBF /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FBD4D2A61EEC2151000F1BBF /* Resnet50.mlmodel */; };
+		FBE4A4CD1EF2829200FCC484 /* ViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4A4CC1EF2829200FCC484 /* ViewController+PickerViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		FBAD413B1EEC14920066DD90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBAD413E1EEC14920066DD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBAD41401EEC14920066DD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD4D2A61EEC2151000F1BBF /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		FBE4A4CA1EF2762B00FCC484 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FBE4A4CC1EF2829200FCC484 /* ViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +59,11 @@
 		FBAD41331EEC14920066DD90 /* CoreMLTest */ = {
 			isa = PBXGroup;
 			children = (
+				FBD4D2A61EEC2151000F1BBF /* Resnet50.mlmodel */,
 				FBAD41341EEC14920066DD90 /* AppDelegate.swift */,
+				FBE4A4CA1EF2762B00FCC484 /* README.md */,
 				FBAD41361EEC14920066DD90 /* ViewController.swift */,
+				FBE4A4CC1EF2829200FCC484 /* ViewController+PickerViewDelegate.swift */,
 				FBAD41381EEC14920066DD90 /* Main.storyboard */,
 				FBAD413B1EEC14920066DD90 /* Assets.xcassets */,
 				FBAD413D1EEC14920066DD90 /* LaunchScreen.storyboard */,
@@ -135,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE4A4CD1EF2829200FCC484 /* ViewController+PickerViewDelegate.swift in Sources */,
 				FBAD41371EEC14920066DD90 /* ViewController.swift in Sources */,
+				FBD4D2A71EEC2151000F1BBF /* Resnet50.mlmodel in Sources */,
 				FBAD41351EEC14920066DD90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PLHL7K9347;
 				INFOPLIST_FILE = CoreMLTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lwj.CoreMLTest;
@@ -282,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PLHL7K9347;
 				INFOPLIST_FILE = CoreMLTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lwj.CoreMLTest;
@@ -310,6 +322,7 @@
 				FBAD41451EEC14920066DD90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
